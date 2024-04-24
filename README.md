@@ -4,7 +4,7 @@
 
 ### Automatic
 
-When using [vim-plug](https://github.com/junegunn/vim-plug), add following lines in your `~/.vimrc file`:
+When using [vim-plug](https://github.com/junegunn/vim-plug), add the following lines in your `~/.vimrc` file:
 
     call plug#begin('~/.vim/plugged')
         Plug 'aristeo812/ob3-vim-syntax'
