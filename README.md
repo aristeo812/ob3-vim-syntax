@@ -1,4 +1,4 @@
-# Vim syntax highligting for Openbox-3 theme files
+# Vim syntax highligting for Openbox theme files
 
 ## Installation
 
