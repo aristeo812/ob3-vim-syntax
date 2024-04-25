@@ -39,11 +39,9 @@ syn match OB3_Words '\v\c\zs<(bevel[12]|border|center|(cross)?diagonal|gradient|
 
 " Identifiers of the elements. I put together these lists according to the
 " official documentation found here: http://openbox.org/wiki/Help:Themes
-" In several themes, I stumbled upon identifiers not listed there, I suppose,
-" either this is a mistake or theme creator relied upon a deprecated feature.
-" I'm in doubt regarding menu.button.selected.* properties found in several
-" (Bunsenlabs') themes. I still didn't add these keywords here, thus the lines
-" containing those expressions won't be highlighted. At least, not yet.
+" Apart from that, I've added syntax rules for menu.bullet properties, which
+" are not listed in the official documentation for some reason, but they
+" proved to be working in practice.
 syn match OB3_ThemeItem '\v\c\zs\s*(border|menu|osd|padding|window|\*)\.((active|bg|border|box|bullet|button|client|color|colorto|disabled|focused|grip|handle|highlight|hilight|hover|image|inactive|items|label|overlap|padding|pressed|selected|separator|text|title|toggled|unhilight|unpressed|\*)\.)*(bg|color|colorTo|font|height|highlight|justify|overlap|shadow|splitTo|width|x|y)\s*:' contains=NONE excludenl
 
 " Hex color codes.
