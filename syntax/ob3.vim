@@ -44,7 +44,7 @@ syn match OB3_Words '\v\c\zs<(bevel[12]|border|center|(cross)?diagonal|gradient|
 " I'm in doubt regarding menu.button.selected.* properties found in several
 " (Bunsenlabs') themes. I still didn't add these keywords here, thus the lines
 " containing those expressions won't be highlighted. At least, not yet.
-syn match OB3_ThemeItem '\v\c\zs\s*(border|menu|osd|padding|window|\*)\.((active|bg|border|box|button|client|color|colorto|disabled|focused|grip|handle|highlight|hilight|hover|image|inactive|items|label|overlap|padding|pressed|separator|text|title|toggled|unhilight|unpressed|\*)\.)*(bg|color|colorTo|font|height|highlight|justify|overlap|shadow|splitTo|width|x|y)\s*:' contains=NONE excludenl
+syn match OB3_ThemeItem '\v\c\zs\s*(border|menu|osd|padding|window|\*)\.((active|bg|border|box|bullet|button|client|color|colorto|disabled|focused|grip|handle|highlight|hilight|hover|image|inactive|items|label|overlap|padding|pressed|selected|separator|text|title|toggled|unhilight|unpressed|\*)\.)*(bg|color|colorTo|font|height|highlight|justify|overlap|shadow|splitTo|width|x|y)\s*:' contains=NONE excludenl
 
 " Hex color codes.
 " According to the documentation, RGB values are encoded as following:
@@ -61,7 +61,6 @@ syn match OB3_Number '\v(<|((^|\s)-))[0-9]+>'
 
 
 " Let's colorize our letters
-
 hi def link OB3_Comment        Comment
 hi def link OB3_ColorCode      Special
 hi def link OB3_Number         Number
@@ -70,5 +69,10 @@ hi def link OB3_ThemeItem      Identifier
 hi def link OB3_FontProperties String
 hi def link OB3_X11_Colors     Constant
 
+" Customizing comments
+setlocal comments=:!,:# 
+setlocal commentstring=!%s
+
+" Finally, setting syntax
 let b:current_syntax = "ob3"
 
