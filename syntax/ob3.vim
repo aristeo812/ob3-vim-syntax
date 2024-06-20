@@ -70,7 +70,7 @@ hi def link OB3_X11_Colors     Constant
 " Customizing comments
 setlocal comments=b:!,b:!!,b:# 
 setlocal commentstring=!!\ %s
-setlocal textwidth=72
+setlocal textwidth=80
 setlocal formatoptions=croql
 
 " Finally, setting syntax
