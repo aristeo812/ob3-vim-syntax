@@ -69,7 +69,7 @@ hi def link OB3_X11_Colors     Constant
 
 " Customizing comments
 setlocal comments=:!,:# 
-setlocal commentstring="! %s"
+setlocal commentstring=!\ %s
 
 " Finally, setting syntax
 let b:current_syntax = "ob3"
