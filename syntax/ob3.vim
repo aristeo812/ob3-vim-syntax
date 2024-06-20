@@ -42,7 +42,7 @@ syn match OB3_Words '\v\c\zs<(bevel[12]|border|center|(cross)?diagonal|gradient|
 " Apart from that, I've added syntax rules for menu.bullet properties, which
 " are not listed in the official documentation for some reason, but they
 " proved to be working in practice.
-syn match OB3_ThemeItem '\v\c\zs\s*(border|menu|osd|padding|window|\*)\.((active|bg|border|box|bullet|button|client|color|colorto|disabled|focused|grip|handle|highlight|hilight|hover|image|inactive|items|label|overlap|padding|pressed|selected|separator|text|title|toggled|unhilight|unpressed|\*)\.)*(bg|color|colorTo|font|height|highlight|justify|overlap|shadow|splitTo|width|x|y)\s*:' contains=NONE excludenl
+syn match OB3_ThemeItem '\v\c\zs\s*(border|menu|osd|padding|window|\*)\.((active|bg|border|box|bullet|button|client|close|color|colorto|desk|disabled|focused|grip|handle|highlight|hilight|hover|iconify|image|inactive|items|label|max|overlap|padding|pressed|selected|separator|shade|text|title|toggled|unhilight|unpressed|\*)\.)*(bg|color|colorTo|font|height|highlight|justify|overlap|shadow|splitTo|width|x|y)\s*:' contains=NONE excludenl
 
 " Hex color codes.
 " According to the documentation, RGB values are encoded as following:
@@ -69,7 +69,7 @@ hi def link OB3_X11_Colors     Constant
 
 " Customizing comments
 setlocal comments=:!,:# 
-setlocal commentstring=!%s
+setlocal commentstring=! %s
 
 " Finally, setting syntax
 let b:current_syntax = "ob3"
