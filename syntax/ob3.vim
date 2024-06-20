@@ -68,8 +68,10 @@ hi def link OB3_FontProperties String
 hi def link OB3_X11_Colors     Constant
 
 " Customizing comments
-setlocal comments=:!,:# 
-setlocal commentstring=!\ %s
+setlocal comments=b:!,b:!!,b:# 
+setlocal commentstring=!!\ %s
+setlocal textwidth=72
+setlocal formatoptions=croql
 
 " Finally, setting syntax
 let b:current_syntax = "ob3"
