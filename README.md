@@ -7,7 +7,7 @@
 When using [vim-plug](https://github.com/junegunn/vim-plug), add the following lines in your `~/.vimrc` file:
 
     call plug#begin('~/.vim/plugged')
-        Plug 'aristeo812/ob3-vim-syntax'
+        Plug 'vbrand1984/ob3-vim-syntax'
     call plug#end()
 
 ### Manual
